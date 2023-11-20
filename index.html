@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
+  <title>PortFolio</title>
+</head>
+
+<body>
+  <header class="header container">
+    <nav>
+      <ul class="header__menu">
+        <li>
+          <a class="header__link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="header__link" href="#featuered">Work</a>
+        </li>
+        <li>
+          <a class="header__link" href="#contact">Contact</a>
+        </li>
+        <li class="header__line"></li>
+        <li>
+          <button id="theme-toggle" class="header__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a class="header__resume btn" href="#">Resume</a>
+        </li>
+      </ul>
+      <button class="header__bars">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+            clip-rule="evenodd" />
+        </svg>
+
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <nav>
+      <ul class="mobile-nav__menu">
+        <li>
+          <a class="mobile-nav__link" href="#about"> About </a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#featured"> Work </a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#contact"> Contact </a>
+        </li>
+        <li class="mobile-nav__link-line"></li>
+        <li><button id="theme-toggle" class="mobile-nav__sun">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+          </svg>
+        </button></li>
+        <li class="mobile-nav__btn btn"> Resume </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- End of Mobile Navigation -->
+
+  <main>
+    <section class="hero container">
+      <img class="hero__img" src="./public/Hero.jpg" alt="Portfolio Image">
+      <h2 class="hero__subtitle">Hi I'm Ashutosh</h2>
+      <h1 class="hero__title">FRONT-END <br>
+        WEB DEVELOPER.</h1>
+      <p class="hero__desc">A passionate <strong> frontend </strong> Web Developer. Lorem ipsum dolor, sit amet
+        consectetur adipisicing
+        elit. Vitae in minus ex? Temporibus excepturi explicabo voluptatum, dolore quo reprehenderit recusandae.
+        Dignissimos voluptate in nostrum neque cumque maxime fuga reiciendis eligendi.</p>
+      <a class="hero__btn btn" href="#">Reach Out</a>
+    </section>
+    <section id="about" class="about container section">
+      <div class="about__content">
+        <h2 class="about__title">About</h2>
+        <p class="about__desc">Hello there! I'm Ashutosh, a <strong> Frontend </strong> Web Developer. Lorem ipsum dolor
+          sit amet consectetur adipisicing elit.
+          Ratione tempore quos recusandae voluptatibus expedita amet. Temporibus amet excepturi omnis nostrum?</p>
+        <p class="about__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus est laboriosam ipsum
+          labore minima omnis
+          assumenda hic eaque ab laborum.</p>
+        <p class="about__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae mollitia iusto unde
+          tempore sint expedita,
+          temporibus similique quo impedit tempora!</p>
+        <hr class="about__hr" />
+        <h3 class="about_subtitle">Technologies</h3>
+        <div class="about__ul-container">
+          <ul class="about__ul">
+            <li class="about__list">Javascript {ES6+}</li>
+            <li class="about__list">HTML</li>
+            <li class="about__list">CSS</li>
+          </ul>
+          <ul class="about__ul">
+            <li class="about__list">Ract JS</li>
+            <li class="about__list">Java</li>
+            <li class="about__list">Python</li>
+          </ul>
+        </div>
+      </div>
+      <div class="about__img-wrapper">
+        <img class="about__img lazy loading" src="https://fakeimg.pl/445" data-src="./Hero.jpg" alt="Profile Pitcture">
+      </div>
+    </section>
+    <section id="featured" class="featured container section">
+      <h3 class="featured__subtitle">Featured Project</h3>
+      <div class="featured__wrapper">
+        <h2 class="featured__title">My Project</h2>
+        <a class="featured__link" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+          </svg>
+
+        </a>
+      </div>
+      <p class="featured__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aut id similique
+        dolore facilis asperiores odit ab nesciunt mollitia harum facere quidem ducimus vitae doloribus, temporibus iure
+        quaerat voluptatibus! Eligendi!</p>
+      <div class="featured__info-container">
+        <div>
+          <h3 class="featured__label">Tech Stack</h3>
+          <ul class="featured__tech-stack">
+            <li class="featured__info">TailwindCSS</li>
+            <li class="featured__info">ReactJS</li>
+            <li class="featured__info">React-hook-form</li>
+            <li class="featured__info">NextJS</li>
+            <li class="featured__info">Axios</li>
+            <li class="featured__info">Supabase</li>
+            <li class="featured__info">Stripe</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="featuerd__label">Project type</h3>
+          <p class="featured__info">Fullstack-jamestack</p>
+        </div>
+        <div>
+          <h3 class="featuerd__label">TimeLine</h3>
+          <p class="featured__info">December 2021 - Present</p>
+        </div>
+      </div>
+      <div class="featured__img-container">
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://fakeimg.pl/1920x1080" data-src="/public/CreditWise-IMG/creditwise-001.png" alt="#">
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://fakeimg.pl/1920x1080" data-src="/public/CreditWise-IMG/creditwise-002.png" alt="#">
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://fakeimg.pl/1920x1080" data-src="/public/CreditWise-IMG/creditwise-003.png" alt="#">
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://fakeimg.pl/1920x1080" data-src="/public/CreditWise-IMG/creditwise-004.png" alt="#">
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://fakeimg.pl/1920x1080" data-src="/public/CreditWise-IMG/creditwise-005.png" alt="#">
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://fakeimg.pl/1920x1080" data-src="/public/CreditWise-IMG/creditwise-006.png" alt="#">
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://fakeimg.pl/1920x1080" data-src="/public/CreditWise-IMG/creditwise-007.png" alt="#">
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://fakeimg.pl/1920x1080" data-src="/public/src.png" alt="#">
+        </div>
+      </div>
+    </section>
+    <section class="work container section">
+      <h2 class="work__title">Projects</h2>
+      <p class="work__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, magnam illum. Illo qui vel,
+        quia sit explicabo cumque eligendi voluptatibus voluptatum. Explicabo perspiciatis blanditiis ipsa architecto
+        consequuntur nemo incidunt dolores.</p>
+
+      <div class="work__container">
+        <!-- Project 1 -->
+        <h3 class="work__project-title">Project 1</h3>
+        <div class="work__img-wrapper work__image1">
+          <img class="lazy loading" src="https://fakeimg.pl/445" data-src="./public/Hero.jpg" alt="Project 1">
+        </div>
+        <div class="work__project work__content1">
+          <h3 class="work__project-subtitle"> Project 1 </h3>
+          <p class="work__project-desc1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae
+            sunt
+            officia pariatur eveniet
+            tempore doloribus deserunt magnam sequi, earum consequuntur. Placeat ipsa illum quae doloribus hic vel
+            aliquam
+            exercitationem?</p>
+          <p class="work__project-desc2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur earum natus
+            voluptatem dicta aspernatur sunt
+            repellendus alias cum mollitia ipsum. Cumque quidem maxime aperiam autem, culpa hic quisquam saepe
+            asperiores?
+          </p>
+          <a class="btn work__project-btn" href="#">Website</a>
+        </div>
+
+        <!-- Project 2 -->
+        <h3 class="work__project-title">Project 2</h3>
+        <div class="work__img-wrapper work__image2">
+          <img class="lazy loading" src="https://fakeimg.pl/445" data-src="./public/Hero.jpg" alt="Project 2">
+        </div>
+        <div class="work__project work__content2">
+          <h3 class="work__project-subtitle"> Project 2 </h3>
+          <p class="work__project-desc1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae
+            sunt
+            officia pariatur eveniet
+            tempore doloribus deserunt magnam sequi, earum consequuntur. Placeat ipsa illum quae doloribus hic vel
+            aliquam
+            exercitationem?</p>
+          <p class="work__project-desc2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur earum natus
+            voluptatem dicta aspernatur sunt
+            repellendus alias cum mollitia ipsum. Cumque quidem maxime aperiam autem, culpa hic quisquam saepe
+            asperiores?
+          </p>
+          <a class="btn work__project-btn" href="#">Website</a>
+        </div>
+
+        <!-- Project 3 -->
+        <h3 class="work__project-title">Project 3</h3>
+        <div class="work__img-wrapper work__image3">
+          <img class="lazy loading" src="https://fakeimg.pl/445" data-src="./public/Hero.jpg" alt="Project 3">
+        </div>
+        <div class="work__project work__content3">
+          <h3 class="work__project-subtitle"> Project 3 </h3>
+          <p class="work__project-desc1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae
+            sunt
+            officia pariatur eveniet
+            tempore doloribus deserunt magnam sequi, earum consequuntur. Placeat ipsa illum quae doloribus hic vel
+            aliquam
+            exercitationem?</p>
+          <p class="work__project-desc2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur earum natus
+            voluptatem dicta aspernatur sunt
+            repellendus alias cum mollitia ipsum. Cumque quidem maxime aperiam autem, culpa hic quisquam saepe
+            asperiores?
+          </p>
+          <a class="btn work__project-btn" href="#">Website</a>
+        </div>
+
+        <!-- Project 4 -->
+        <h3 class="work__project-title">Project 4</h3>
+        <div class="work__img-wrapper work__image4">
+          <img class="lazy loading" src="https://fakeimg.pl/445" data-src="./public/Hero.jpg" alt="Project 4">
+        </div>
+        <div class="work__project work__content4">
+          <h3 class="work__project-subtitle"> Project 4 </h3>
+          <p class="work__project-desc1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae
+            sunt
+            officia pariatur eveniet
+            tempore doloribus deserunt magnam sequi, earum consequuntur. Placeat ipsa illum quae doloribus hic vel
+            aliquam
+            exercitationem?</p>
+          <p class="work__project-desc2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur earum natus
+            voluptatem dicta aspernatur sunt
+            repellendus alias cum mollitia ipsum. Cumque quidem maxime aperiam autem, culpa hic quisquam saepe
+            asperiores?
+          </p>
+          <a class="btn work__project-btn" href="#">Website</a>
+        </div>
+
+        <!-- Project 5 -->
+        <h3 class="work__project-title">Project 5</h3>
+        <div class="work__img-wrapper work__image5">
+          <img class="lazy loading" src="https://fakeimg.pl/445" data-src="./public/Hero.jpg" alt="Project 5">
+        </div>
+        <div class="work__project work__content5">
+          <h3 class="work__project-subtitle"> Project 5 </h3>
+          <p class="work__project-desc1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae
+            sunt
+            officia pariatur eveniet
+            tempore doloribus deserunt magnam sequi, earum consequuntur. Placeat ipsa illum quae doloribus hic vel
+            aliquam
+            exercitationem?</p>
+          <p class="work__project-desc2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur earum natus
+            voluptatem dicta aspernatur sunt
+            repellendus alias cum mollitia ipsum. Cumque quidem maxime aperiam autem, culpa hic quisquam saepe
+            asperiores?
+          </p>
+          <a class="btn work__project-btn" href="#">Website</a>
+        </div>
+
+        <!-- Project 6 -->
+        <h3 class="work__project-title">Project 6</h3>
+        <div class="work__img-wrapper work__image6">
+          <img class="lazy loading" src="https://fakeimg.pl/445" data-src="./public/Hero.jpg" alt="Project 6">
+        </div>
+        <div class="work__project work__content6">
+          <h3 class="work__project-subtitle"> Project 6 </h3>
+          <p class="work__project-desc1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae
+            sunt
+            officia pariatur eveniet
+            tempore doloribus deserunt magnam sequi, earum consequuntur. Placeat ipsa illum quae doloribus hic vel
+            aliquam
+            exercitationem?</p>
+          <p class="work__project-desc2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur earum natus
+            voluptatem dicta aspernatur sunt
+            repellendus alias cum mollitia ipsum. Cumque quidem maxime aperiam autem, culpa hic quisquam saepe
+            asperiores?
+          </p>
+          <a class="btn work__project-btn" href="#">Website</a>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact container section">
+      <h2 class="contact__title">Get In Contact</h2>
+      <p class="contact__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates earum molestias
+        perspiciatis blanditiis, doloribus magnam assumenda qui reprehenderit, totam adipisci ducimus maxime pariatur
+        fugit ab?</p>
+        <a class="contact__btn btn" href="mailto:ashutoshshinde236@gmail.com" target="_blank">Reach Out</a>
+    </section>
+  </main>
+ 
+  <div class="footer container section">
+    <h3 class="footer__title"> ~ Ashutosh Shinde ~ </h3>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
